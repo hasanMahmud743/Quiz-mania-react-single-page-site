@@ -13,7 +13,7 @@ const StartQuiz = () => {
            
             {/* <QuizQue QuizDetails={QuizDetails}></QuizQue> */}
             {
-                questions.map(question => <QuizQue que={question}></QuizQue>)
+                questions.map(question => <QuizQue key={question.id} que={question}></QuizQue>)
             }
             
         </div>

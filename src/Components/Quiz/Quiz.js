@@ -1,27 +1,55 @@
-import React, { useState } from 'react';
-
-
+import React from 'react';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Quiz.css';
 
-const Quiz = ({quiz, id, setCorrect, correctAnswer}) => {
-    const [click, setClick] = useState('')
+
+
+const Quiz = ({quiz, id, setCorrect}) => {
+    // const  [click, setClick] = useState('');
     
 
-  
-    if(click === correctAnswer){
+    // const clicked = (id) =>{
+    //     setCorrect(id)
+    // }
+    // const correct = () => toast("Correct Answer");
+    
+
+//   if(click){
+//     // console.log(click)
+    
+//      if(click === correctAnswer){
+//         setCorrect('Correct')
+//         correct()
+//         console.log('click')
+//     }
+//     else if(click !== correctAnswer){
         
-        setCorrect('Correct')
+//         setCorrect('Not Correct')
         
-    } 
+//     } 
+//   }
+
+    //   useEffect(()=>{
+    //     if(click){
+    //         click === correctAnswer ? setCorrect('Correct'): setCorrect('Not Correct')
+    //        }
+    //   },[click])
 
     
   
     return (
         <div className='que-option'>
-            {/* <p>{quiz}</p> */}
+          
+            <div >
+                <input  onClick={()=> setCorrect(quiz)}  name={id} type="radio"/>
+                <label htmlFor={quiz} >{quiz}</label>
+                <ToastContainer />
+
+            </div>
+          
             
-            <input onClick={()=>setClick(quiz)} name={id} type="radio"/>
-            <label for={quiz} >{quiz}</label>
+           
            
            
             {/* {
