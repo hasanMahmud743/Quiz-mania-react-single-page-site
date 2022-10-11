@@ -1,3 +1,5 @@
+import { faEye } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { toast, ToastContainer } from 'react-toastify';
@@ -11,8 +13,6 @@ const QuizQue = ({que}) => {
     const {question, options, id, correctAnswer} = que
     const [match, setMatch] = useState('Select Ones')
     console.log(question)
-    // const cleanText  = question.slice('<p>')
-    // console.log(cleanText)
     
     const setCorrect = id =>{
         
@@ -28,15 +28,24 @@ const QuizQue = ({que}) => {
         }
     }
 
+    const eyeClick = ans=>{
+        showEye(ans)
+    }
+
+
     const showCorrect = () => toast('Your answer is Correct');
     const showWrong =()=> toast('You pinned in a wrong Answer')
+    const showEye= (id) => toast(`${id}`)
 
      
    
         
     return (
         <div className='quiz container' >
-            <h4>{question}</h4>
+           <div className='d-flex px-5 justify-content-between'>
+                <h4 className='text-left'>{question}</h4>
+                <FontAwesomeIcon onClick={()=> eyeClick(correctAnswer)} icon={faEye} />
+           </div>
             <p> Ans:{match}</p>
             <ToastContainer />
                <div className='border shadow m-5 auto   rounded  '>

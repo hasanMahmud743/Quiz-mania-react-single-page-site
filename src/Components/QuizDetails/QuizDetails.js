@@ -4,15 +4,16 @@ import './QuizDetails.css';
 
 const QuizDetails = ({quiz}) => {
     const {id, name, logo} = quiz
-    // console.log(id)
+    
 
     
     return (
-        <div className='cart-design '>
+        <div className='cart-design shadow '>
             <img src={logo} alt="" />
+            
             <div className='card-details'>
-                <h4>{name}</h4>
-               <Link to={`/startQuiz/${id}`} > link </Link>
+                <h4 className='my-3'>{name}</h4>
+              <Link className='text' to={`/startQuiz/${id}`} > link </Link>
             </div>
             
         </div>

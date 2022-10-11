@@ -1,18 +1,29 @@
 .cart-design{
     border: 1px solid black;
-    margin: 30px;
+    margin: 10px;
     padding: 10px;
     border-radius: 10px;
     
-    background-color: rgb(247, 242, 242);
+    background-color: rgb(251, 245, 245);
 
 }
 .cart-design img{
     width: 100%;
 }
 
-.card-details{
-    /* display: flex; */
-    text-align: center;
-    /* margin-top: 20px; */
+.text{
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-top: px;
 }
+
+.text:hover{
+    color:black
+}
+
+/* .card-details{
+    display: flex;
+} */
