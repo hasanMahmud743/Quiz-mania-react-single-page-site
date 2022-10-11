@@ -7,23 +7,12 @@ const Quiz = ({quiz, id, setCorrect}) => {
     return (
         <div className='que-option'>
           
-            <div >
-                <input  onClick={()=> setCorrect(quiz)}  name={id} type="radio"/>
-                <label htmlFor={quiz} >{quiz}</label>
-               
+            <div className=' py-2'>
 
+                <input   onClick={()=> setCorrect(quiz)} value={quiz} id={quiz}  name={id} type="radio"/>
+                <label className='px-1' htmlFor={quiz} >{quiz}</label>
+                    
             </div>
-          
-            
-           
-           
-           
-            {/* {
-                click===correctAnswer ? <p>correct</p> : <p> False</p>
-            } */}
-
-            
-
             
         </div>
     );
