@@ -11,12 +11,11 @@ const StartQuiz = () => {
         <div>
             <h2>this is quiz of {name}....</h2>
            
-            {/* <QuizQue QuizDetails={QuizDetails}></QuizQue> */}
-            <div className=''>
-            {
-                questions.map(question => <QuizQue key={question.id} que={question}></QuizQue>)
-            }
-            </div>
+                <div className=''>
+                {
+                    questions.map(question => <QuizQue key={question.id} que={question}></QuizQue>)
+                }
+                </div>
             
         </div>
     );

@@ -1,22 +1,34 @@
 import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import { useLoaderData } from 'react-router-dom';
 import QuizDetails from '../QuizDetails/QuizDetails';
-import './Home.css';
+
 
 const Home = () => {
     const quizs = useLoaderData().data
-    console.log(quizs)
+
     return (
         <div>
             <h2>This is home Components</h2>
 
-            <div className='cart-componen d-flex'>
+            <Container>
+            <Row>
                 
-                    {
-                        quizs.map(quiz=> <QuizDetails quiz={quiz} key={quiz.id}></QuizDetails>)
-                    }
+                {
+                    quizs.map(quiz=> 
+                        <Col md={6} lg={3}>
+                            <QuizDetails quiz={quiz} key={quiz.id}></QuizDetails>
+                        </Col>)
+
+                }
+            </Row>
+
+            </Container>
+
+            
+           
                
-            </div>
+            
         </div>
     );
 };

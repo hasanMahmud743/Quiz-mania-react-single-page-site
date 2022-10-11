@@ -42,15 +42,20 @@ const QuizQue = ({que}) => {
                <div className='border shadow m-5 auto   rounded  '>
                <Container>
                <Row >
-                    <Col sm={12}> 
+               
                         
-                            
-                            {
-                                options.map((option, ind)  =><Quiz setCorrect={setCorrect} key={ind}  correctAnswer={correctAnswer} id={id} quiz={option}></Quiz>)
-                            }
+                    
+                    {
+                        options.map((option, ind)  =>
+                       <Col md={6}>
+                         <Quiz setCorrect={setCorrect} key={ind}  correctAnswer={correctAnswer} id={id} quiz={option}></Quiz>
+                       
+                        </Col>)
+                        
+                    }
                             
                         
-                    </Col>
+               
                 </Row>
                </Container>
                   

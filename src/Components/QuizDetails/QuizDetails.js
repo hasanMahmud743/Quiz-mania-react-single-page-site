@@ -8,7 +8,7 @@ const QuizDetails = ({quiz}) => {
 
     
     return (
-        <div className='cart-design'>
+        <div className='cart-design '>
             <img src={logo} alt="" />
             <div className='card-details'>
                 <h4>{name}</h4>
