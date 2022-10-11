@@ -41,12 +41,12 @@ const QuizQue = ({que}) => {
    
         
     return (
-        <div className='quiz container' >
+        <div className='quiz container border my-5 p-lg-3 rounded' >
            <div className='d-flex px-5 justify-content-between'>
                 <h4 className='text-left'>{question}</h4>
                 <FontAwesomeIcon onClick={()=> eyeClick(correctAnswer)} icon={faEye} />
            </div>
-            <p> Ans:{match}</p>
+            
             <ToastContainer />
                <div className='border shadow m-5 auto   rounded  '>
                <Container>
