@@ -1,5 +1,5 @@
 
-Assignment live site (https://glowing-gnome-874e1b.netlify.app/)
+Assignment live site (https://glowing-gnome-874e1b.netlify.app)
 
 ### Three Bullet points on this project:
 
