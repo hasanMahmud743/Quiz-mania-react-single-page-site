@@ -10,22 +10,23 @@ import './QuizQue.css';
 
 
 
-const QuizQue = ({que}) => {
+const QuizQue = ({que, setChange, change}) => {
     const {question, options, id, correctAnswer} = que
     const [match, setMatch] = useState('Select Ones')
     
     const cleanQue = question.split('<p>').join('')
     const cleanQue2 = cleanQue.split('</p>').join('')
 
-   
+   console.log(setChange)
     
     const setCorrect = id =>{
         
 
         
         if(id === correctAnswer){
-            setMatch('Your answer is Correct')
+            setMatch('Your answer is Correct')  
             showCorrect()
+            setChange(change + 1)
            
         } else{
             setMatch('You pinned in a wrong Answer')

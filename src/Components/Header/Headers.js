@@ -6,15 +6,16 @@ import './Header.css';
 
 function Headers() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar className='bg' expand="lg">
       <Container>
-        <Navbar.Brand href="#home">Quiz-Mania</Navbar.Brand>
+        <Navbar.Brand href="#home"><span className='fw-bold'>Quiz-Mania</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto header-menu">
-            <NavLink className='mx-3' to="/home">Home</NavLink>
-            <NavLink className='mx-3' to="/statistics">Statistics</NavLink>
-            <NavLink className='mx-3' to="/blogs">Blog</NavLink>
+
+            <NavLink  className={({isActive}) => isActive ? 'active' : undefined}   to="/home">Home</NavLink>
+            <NavLink className={({isActive}) => isActive ? 'active' : undefined} to="/statistics">Statistics</NavLink>
+            <NavLink className={({isActive}) => isActive ? 'active' : undefined} to="/blogs">Blog</NavLink>
            
           </Nav>
         </Navbar.Collapse>

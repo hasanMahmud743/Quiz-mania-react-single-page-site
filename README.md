@@ -70,5 +70,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-01.Mahmudul Hasan
-02.web developer
+Three Bullet points on this project:
+
+01: A responsive, A Navbar with three dynamic routs, that is created with React-Router-DOM.
+
+02: Have oppertunity to participate quiz and observe individuals performance and accuracy. 
+
+03: Have a Blog section where every individual have oppartunity to make a strong foundation on React Basic fundamentals.
