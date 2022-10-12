@@ -1,3 +1,14 @@
 .quiz p{
     color: red;
 }
+.quiz-que{
+    background-color: #4b6584;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    text-align: start;
+}
+
+.quiz-container{
+    background-color:#ecf0f1;
+}

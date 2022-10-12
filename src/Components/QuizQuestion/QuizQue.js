@@ -5,6 +5,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Quiz from '../Quiz/Quiz';
+import './QuizQue.css';
 
 
 
@@ -12,7 +13,11 @@ import Quiz from '../Quiz/Quiz';
 const QuizQue = ({que}) => {
     const {question, options, id, correctAnswer} = que
     const [match, setMatch] = useState('Select Ones')
-    console.log(question)
+    
+    const cleanQue = question.split('<p>').join('')
+    const cleanQue2 = cleanQue.split('</p>').join('')
+
+   
     
     const setCorrect = id =>{
         
@@ -41,14 +46,14 @@ const QuizQue = ({que}) => {
    
         
     return (
-        <div className='quiz container border my-5 p-lg-3 rounded' >
-           <div className='d-flex px-5 justify-content-between'>
-                <h4 className='text-left'>{question}</h4>
+        <div className='quiz container quiz-container border my-5 p-lg-3 rounded' >
+           <div className='d-flex quiz-que align-items-center  px-5 justify-content-between'>
+                <h4 className='text-left'>{cleanQue2}</h4>
                 <FontAwesomeIcon onClick={()=> eyeClick(correctAnswer)} icon={faEye} />
            </div>
             
             <ToastContainer />
-               <div className='border shadow m-5 auto   rounded  '>
+               <div className='border  shadow m-5 auto   rounded  '>
                <Container>
                <Row >
                
@@ -56,8 +61,8 @@ const QuizQue = ({que}) => {
                     
                     {
                         options.map((option, ind)  =>
-                       <Col md={6}>
-                         <Quiz setCorrect={setCorrect} key={ind}  correctAnswer={correctAnswer} id={id} quiz={option}></Quiz>
+                       <Col key={ind} md={6}>
+                         <Quiz setCorrect={setCorrect}   correctAnswer={correctAnswer} id={id} quiz={option}></Quiz>
                        
                         </Col>)
                         
