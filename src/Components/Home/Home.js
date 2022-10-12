@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useLoaderData } from 'react-router-dom';
+import Banner from '../Banner/Banner';
 import QuizDetails from '../QuizDetails/QuizDetails';
 
 
@@ -9,7 +10,7 @@ const Home = () => {
 
     return (
         <div>
-            <h2>This is home Components</h2>
+            <Banner></Banner>
 
             <Container>
             <Row>

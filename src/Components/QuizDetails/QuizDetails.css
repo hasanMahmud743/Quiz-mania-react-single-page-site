@@ -1,28 +1,42 @@
 .cart-design{
-    border: 1px solid black;
+    border: 1px solid rgb(247, 243, 243);
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
-    background-color: rgb(251, 245, 245);
+    background-color: rgb(209, 216, 210);
 
 }
 .cart-design img{
     width: 100%;
 }
 
-
-
-.text{
+.text .card-details{
+    
+    color: rgb(19, 18, 18);
     text-decoration: none;
-    color: white;
-    background-color: gray;
-    padding: 5px 20px;
-    border-radius: 5px;
-    margin-top: px;
+    
 }
 
+
+
+.text , a{
+    text-decoration: none;
+    color: rgb(182, 97, 97);
+    transition: .5s;
+}
+
+
 .text:hover{
-    color:black
+  
+    color:rgb(240, 233, 233);
+    background-color: rgba(11, 8, 3, 0.7);
+    scale: 1.1;
+}
+
+.text:hover > a{
+  
+    color:rgb(240, 233, 233);
+   
 }
 
 /* .card-details{
