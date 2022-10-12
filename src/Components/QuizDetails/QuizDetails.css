@@ -1,10 +1,10 @@
 .cart-design{
-    border: 1px solid rgb(247, 243, 243);
+    /* border: 1px solid rgb(247, 243, 243); */
     margin: 10px;
     
     padding: 10px;
     border-radius: 10px;
-    background-color: rgb(209, 216, 210);
+    background-color: #e2e8ed;
 
 }
 .cart-design img{
@@ -30,7 +30,7 @@
 .text:hover{
   
     color:rgb(240, 233, 233);
-    background-color: rgba(99, 97, 94, 0.7);
+    background-color: #e6f1fa;
     scale: 1.08;
 }
 

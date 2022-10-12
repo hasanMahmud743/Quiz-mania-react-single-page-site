@@ -10,7 +10,7 @@ const QuizDetails = ({quiz}) => {
 
     
     return (
-        <div className='cart-design text shadow mb-5 '>
+        <div className='cart-design text shadow-lg mb-5 '>
             <Link  to={`/startQuiz/${id}`} > 
                 <img src={logo} alt="" />
                 
