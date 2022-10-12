@@ -30,14 +30,18 @@
 .text:hover{
   
     color:rgb(240, 233, 233);
-    background-color: #e6f1fa;
+    background-color: #dde6ed;
     scale: 1.08;
 }
 
  a:hover{
-    color:rgb(240, 233, 233);
+    color:rgb(141, 111, 111);
 }
 
-/* .card-details{
-    display: flex;
-} */
+.icon{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+    border-radius: 50%;
+}

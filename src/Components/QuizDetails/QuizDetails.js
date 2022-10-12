@@ -11,19 +11,21 @@ const QuizDetails = ({quiz}) => {
     
     return (
         <div className='cart-design text shadow-lg mb-5 '>
-            <Link  to={`/startQuiz/${id}`} > 
+           
                 <img src={logo} alt="" />
                 
                 <div className='card-details'>
                     <h3 className='my-3'>{name}</h3>
                     <div className='d-flex px-2 py-1 justify-content-between'>
                          <p className='fw-bold'>  Total Quiz: {total}</p>
-                         <FontAwesomeIcon className='rounded-circle' icon={faArrowRight} />
-
+                         
+                         <Link  to={`/startQuiz/${id}`} > 
+                         <FontAwesomeIcon className='icon' icon={faArrowRight} />
+                         </Link>
 
                     </div>
                 </div>
-            </Link>
+          
             
         </div>
     );

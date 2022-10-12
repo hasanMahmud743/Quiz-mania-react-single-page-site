@@ -7,10 +7,10 @@ const Quiz = ({quiz, id, setCorrect}) => {
     return (
         <div className='que-option'>
           
-            <div className=' py-2'>
+            <div className=' py-2 '>
 
                 <input   onClick={()=> setCorrect(quiz)} value={quiz} id={quiz}  name={id} type="radio"/>
-                <label className='px-1' htmlFor={quiz} >{quiz}</label>
+                <label className='px-1 options' htmlFor={quiz} >{quiz}</label>
                     
             </div>
             
