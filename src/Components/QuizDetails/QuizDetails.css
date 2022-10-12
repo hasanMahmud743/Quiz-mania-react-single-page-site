@@ -1,7 +1,5 @@
 .cart-design{
-    /* border: 1px solid rgb(247, 243, 243); */
     margin: 10px;
-    
     padding: 10px;
     border-radius: 10px;
     background-color: #e2e8ed;
@@ -22,7 +20,6 @@
 
 .text , a{
     text-decoration: none;
-    color: rgb(182, 97, 97);
     transition: .5s;
 }
 
@@ -40,8 +37,17 @@
 
 .icon{
     border: 1px solid black;
+    color:black;
     width: 20px;
     height: 20px;
     padding: 4px;
     border-radius: 50%;
+    transition: 0.3s;
+}
+
+.icon:hover{
+    background-color:rgb(70, 15, 222);
+    border: 1px solid rgb(70, 15, 222);
+    color:white
+
 }
