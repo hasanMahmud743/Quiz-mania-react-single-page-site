@@ -13,7 +13,7 @@ const StartQuiz = () => {
         <div>
            <Container>
           <div>
-          <h2 className='mb-5 mt-3'>this is quiz of {name}....</h2>
+          <h2 className='mb-5 mt-3'>This is quiz of {name}....</h2>
          
 
           </div>

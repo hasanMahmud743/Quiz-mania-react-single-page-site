@@ -1,0 +1,9 @@
+.error{
+    background-color: cornflowerblue;
+    height: 90vh;
+    color: rgb(251, 241, 241);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

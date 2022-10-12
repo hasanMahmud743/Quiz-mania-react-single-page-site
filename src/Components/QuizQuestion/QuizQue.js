@@ -40,7 +40,7 @@ const QuizQue = ({que}) => {
 
     const showCorrect = () => toast('Your answer is Correct');
     const showWrong =()=> toast('You pinned in a wrong Answer')
-    const showEye= (id) => toast(`${id}`)
+    const showEye= (id) => toast(`Correct Ans: ${id}`)
 
      
    
@@ -49,7 +49,7 @@ const QuizQue = ({que}) => {
         <div className='quiz container quiz-container border my-5 p-lg-3 rounded' >
            <div className='d-flex quiz-que align-items-center  px-5 justify-content-between'>
                 <h4 className='text-left'>{cleanQue2}</h4>
-                <FontAwesomeIcon onClick={()=> eyeClick(correctAnswer)} icon={faEye} />
+                <FontAwesomeIcon className='eye' onClick={()=> eyeClick(correctAnswer)} icon={faEye} />
            </div>
             
             <ToastContainer />

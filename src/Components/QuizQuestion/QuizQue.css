@@ -12,3 +12,7 @@
 .quiz-container{
     background-color:#ecf0f1;
 }
+
+.eye{
+    cursor: pointer;
+}

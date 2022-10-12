@@ -1,0 +1,13 @@
+.blogs{
+    background-color: rgb(243, 235, 225);
+    padding-bottom: 150px;
+}
+
+.blogs h3{
+    margin: 40px;
+    text-align: left;
+}
+.blogs p{
+    text-align: left;
+    color: #777;
+}
